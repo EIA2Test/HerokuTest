@@ -1,1 +1,1 @@
-Hello, I'm a test file
+Hello, I'm a test file from GitTest2
