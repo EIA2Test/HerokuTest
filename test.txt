@@ -1,3 +1,5 @@
 Testfile written directly in GitHub
 
 edited in eclipse
+
+edited working tree in view "Git Repositories"
