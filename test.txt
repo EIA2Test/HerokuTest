@@ -8,3 +8,5 @@ from "Git Repositories" imported as general project via right mouseclick
 
 Commit from repo view
 worked
+
+In App-Explorer it is possible to directly deploy to heroku... check it out
