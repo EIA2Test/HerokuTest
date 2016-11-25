@@ -19,4 +19,6 @@ Do:
 
 
 Checking other option:
-- 
+- in new workspace
+- open "Git Repositories" view
+- Clone Repo
