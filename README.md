@@ -14,3 +14,7 @@ Do:
 - Define destination: new folder in workspace
 - select "import as general project"
 - if needed: add .project to gitignore via Navigator
+
+
+Checking other option:
+- 
