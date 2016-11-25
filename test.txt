@@ -3,3 +3,5 @@ Testfile written directly in GitHub
 edited in eclipse
 
 edited working tree in view "Git Repositories"
+
+from "Git Repositories" imported as general project via right mouseclick
