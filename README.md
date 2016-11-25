@@ -23,4 +23,8 @@ Checking other option:
 - open "Git Repositories" view
 - Clone Repo
 - Rightclick on Working Tree -> Import Projects -> Import Working Tree as general project
-- 
+- work in "Project View"
+- To commit/push:
+-- rightclick on working tree in repo-view -> Add To Index
+-- Changed files appear as Staged Changes
+-- Commit And Push
