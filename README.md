@@ -22,3 +22,5 @@ Checking other option:
 - in new workspace
 - open "Git Repositories" view
 - Clone Repo
+- Rightclick on Working Tree -> Import Projects -> Import Working Tree as general project
+- 
