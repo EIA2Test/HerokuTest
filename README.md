@@ -10,6 +10,7 @@ Test for the combination of node.js with Eclipse, Heroku, GitHub and MongoDB in 
 * View in Heroku as https://[projektname].herokuapp.com
 
 ##Connect Eclipse and GitHub
+
 ### Alternative 1
 - install EGit [necessary?]
 - start new workspace with eclipse
@@ -20,6 +21,7 @@ Test for the combination of node.js with Eclipse, Heroku, GitHub and MongoDB in 
 - Define destination: new folder in workspace
 - select "import as general project"
 - if needed: add .project to gitignore via Navigator
+
 ###Alternative2
 - in new workspace
 - open "Git Repositories" view
@@ -30,8 +32,10 @@ Test for the combination of node.js with Eclipse, Heroku, GitHub and MongoDB in 
   - rightclick on working tree in repo-view -> Add To Index
   - Changed files appear as Staged Changes
   - Commit And Push
+
 ###Adjust project nature
 e.g to Web for use with Aptana
+
 ##Setup Typesript
 - copy node.d.ts to project
 
