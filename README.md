@@ -3,9 +3,8 @@ Test for node.js with Heroku
 see how it works
 Finally I probably managed to connect
 
-
-
-Do:
+--------------------
+Git it!
 - install EGit [necessary?]
 - start new workspace with eclipse
 - Import -> Git -> Projects from Git
@@ -16,9 +15,7 @@ Do:
 - select "import as general project"
 - if needed: add .project to gitignore via Navigator
 
-
-
-Checking other option:
+Alternative:
 - in new workspace
 - open "Git Repositories" view
 - Clone Repo
@@ -28,3 +25,12 @@ Checking other option:
 -- rightclick on working tree in repo-view -> Add To Index
 -- Changed files appear as Staged Changes
 -- Commit And Push
+
+At the end: Adujst project nature to Web if desired
+
+
+----------------------------
+Typesript
+- copy node.d.ts to project
+
+
