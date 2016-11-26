@@ -1,5 +1,5 @@
 "use strict";
-// Import HTTP module from node
+// Import HTTP module from node.js
 var http = require("http");
 // Get or define port to listen on
 var port = process.env.PORT;

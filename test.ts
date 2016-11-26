@@ -1,4 +1,4 @@
-// Import HTTP module from node
+// Import HTTP module from node.js
 import http = require("http");
 // Get or define port to listen on
 var port: number = process.env.PORT;
