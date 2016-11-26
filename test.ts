@@ -1,5 +1,6 @@
 // Import HTTP module from node.js
 import http = require("http");
+import url = require("url");
 // Get or define port to listen on
 var port: number = process.env.PORT;
 if (port == undefined)
@@ -19,7 +20,15 @@ function handleRequest(request: http.ServerRequest, response: http.ServerRespons
     });
     response.write("Calls to this page: " + ++counter + "<br>");
     response.write("Port: " + port + "<br>");
-    response.end("Request url: " + request.url);
+    response.write("Method: " + request.method + "<br>");
+    response.write("Url: " + request.url + "<br>");
+    response.write("Headers: " + request.headers + "<br>");
+    // extract query-parameters
+    var query: url.Url = url.parse(request.url, true).query;
+    console.log(query);
+    for (var key in query)
+        response.write(key + ": " + query[key] + "<br>");
+    response.end();
 }
 
 function onListening(): void {

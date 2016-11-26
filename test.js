@@ -1,6 +1,7 @@
 "use strict";
 // Import HTTP module from node.js
 var http = require("http");
+var url = require("url");
 // Get or define port to listen on
 var port = process.env.PORT;
 if (port == undefined)
@@ -17,7 +18,15 @@ function handleRequest(request, response) {
     });
     response.write("Calls to this page: " + ++counter + "<br>");
     response.write("Port: " + port + "<br>");
-    response.end("Request url: " + request.url);
+    response.write("Method: " + request.method + "<br>");
+    response.write("Url: " + request.url + "<br>");
+    response.write("Headers: " + request.headers + "<br>");
+    // extract query-parameters
+    var query = url.parse(request.url, true).query;
+    console.log(query);
+    for (var key in query)
+        response.write(key + ": " + query[key] + "<br>");
+    response.end();
 }
 function onListening() {
     console.log("Yup...Server listening on: http://localhost:%s", port);
