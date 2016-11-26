@@ -17,9 +17,9 @@ function handleRequest(request: http.ServerRequest, response: http.ServerRespons
     response.writeHead(200, {
         "content-type": "text/html"
     });
-    response.write("Hello World<br>");
-    response.write("Process: " + process + "<br>");
-    response.end("Klappt! Request url: " + request.url);
+    response.write("Calls to this page: " + ++counter + "<br>");
+    response.write("Port: " + port + "<br>");
+    response.end("Request url: " + request.url);
 }
 
 function onListening(): void {

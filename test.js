@@ -15,9 +15,9 @@ function handleRequest(request, response) {
     response.writeHead(200, {
         "content-type": "text/html"
     });
-    response.write("Hello World<br>");
-    response.write("Process: " + process + "<br>");
-    response.end("Klappt! Request url: " + request.url);
+    response.write("Calls to this page: " + ++counter + "<br>");
+    response.write("Port: " + port + "<br>");
+    response.end("Request url: " + request.url);
 }
 function onListening() {
     console.log("Yup...Server listening on: http://localhost:%s", port);
