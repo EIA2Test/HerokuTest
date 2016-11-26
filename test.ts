@@ -1,17 +1,19 @@
-"use strict";
 // Import HTTP module from node
-var http = require("http");
+import http = require("http");
 // Get or define port to listen on
-var port = process.env.PORT;
+var port: number = process.env.PORT;
 if (port == undefined)
     port = 8080;
-var counter = 0;
+
+var counter: number = 0;
+
 // Create a server that calls handleRequest when requested 
-var server = http.createServer(handleRequest);
+var server: http.Server = http.createServer(handleRequest);
 // start and listen
 server.listen(port, onListening);
+
 // Handles request and send response
-function handleRequest(request, response) {
+function handleRequest(request: http.ServerRequest, response: http.ServerResponse): void {
     response.writeHead(200, {
         "content-type": "text/html"
     });
@@ -19,7 +21,7 @@ function handleRequest(request, response) {
     response.write("Process: " + process + "<br>");
     response.end("Klappt! Request url: " + request.url);
 }
-function onListening() {
+
+function onListening(): void {
     console.log("Yup...Server listening on: http://localhost:%s", port);
 }
-//# sourceMappingURL=test.js.map
