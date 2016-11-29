@@ -17,7 +17,7 @@ function handleRequest(request, response) {
         "content-type": "text/html"
     });
     response.write("Heroku/Github/Mongo-Test<br>");
-    response.write("Running with empty package.json<br>");
+    response.write("Running without Procfile<br>");
     response.write("Calls to this page: " + ++counter + "<br>");
     response.write("Port: " + port + "<br>");
     response.write("Method: " + request.method + "<br>");
