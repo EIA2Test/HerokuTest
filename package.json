@@ -1,2 +1,21 @@
 {
+	"name": "Heroku/Github/Mongo-Test",
+	"version": "0.1",
+	"description": "Jirka experimenting",
+	"author": "Jirka Dell'Oro-Friedl",
+	"engines": {
+		"node": "5.8.0"
+	},
+	"main": "test.js",
+	"scripts": {
+		"start": "node test.js"
+	},
+	"dependencies": {
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EIA2Test/HerokuTest"
+	},
+	"keywords": ["node", "heroku", "mongodb"],
+	"license": "HFU"
 }
