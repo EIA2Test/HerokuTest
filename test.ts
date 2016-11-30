@@ -19,7 +19,7 @@ function handleRequest(request: http.ServerRequest, response: http.ServerRespons
         "content-type": "text/html"
     });
     response.write("Heroku/Github/Mongo-Test<br>");
-    response.write("Running without Procfile<br>");
+    response.write("appearantly needs procfile, though package.json may be omitted when required packages are installed<br>");
     response.write("Calls to this page: " + ++counter + "<br>");
     response.write("Port: " + port + "<br>");
     response.write("Method: " + request.method + "<br>");
