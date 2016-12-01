@@ -20,6 +20,7 @@ function handleRequest(request: http.ServerRequest, response: http.ServerRespons
     });
     response.write("Heroku/Github/Mongo-Test<br>");
     response.write("appearantly needs procfile, though package.json may be omitted when required packages are installed<br>");
+    response.write("created this text on new branch TestBranch<br>");
     response.write("Calls to this page: " + ++counter + "<br>");
     response.write("Port: " + port + "<br>");
     response.write("Method: " + request.method + "<br>");
