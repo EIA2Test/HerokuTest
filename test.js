@@ -1,7 +1,7 @@
 "use strict";
 // Import HTTP module from node.js
-var http = require("http");
-var url = require("url");
+const http = require("http");
+const url = require("url");
 // Get or define port to listen on
 var port = process.env.PORT;
 if (port == undefined)
@@ -19,6 +19,7 @@ function handleRequest(request, response) {
     response.write("Heroku/Github/Mongo-Test<br>");
     response.write("appearantly needs procfile, though package.json may be omitted when required packages are installed<br>");
     response.write("created this text on new branch TestBranch<br>");
+    response.write("NODE_ENV: " + process.env.NODE_ENV + "<br>");
     response.write("Calls to this page: " + ++counter + "<br>");
     response.write("Port: " + port + "<br>");
     response.write("Method: " + request.method + "<br>");
