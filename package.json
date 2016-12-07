@@ -11,7 +11,7 @@
 		"start": "node test.js"
 	},
 	"dependencies": {
-		"mongodb": "3.4.0"
+		"mongodb": "2.2.12"
 	},
 	"repository": {
 		"type": "git",
