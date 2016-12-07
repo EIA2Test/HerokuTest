@@ -1,1 +1,2 @@
-web: node test.js
+npm install
+web: node mongo.js
