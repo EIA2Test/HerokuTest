@@ -1,3 +1,4 @@
 .project
 /mongo/
-/node_modules/
+
+.project/node_modules/
