@@ -11,7 +11,7 @@
 		"start": "node mongo.js"
 	},
 	"dependencies": {
-		"mongodb": "*"
+		"mongodb": "2.2.12"
 	},
 	"repository": {
 		"type": "git",
