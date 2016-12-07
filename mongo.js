@@ -1,7 +1,6 @@
 "use strict";
 // Import HTTP module from node.js
 console.log("Startup mongo.js");
-//import mongodb = require("mongodb");
 const fs = require("fs");
 //import * as http from "http";
 //import * as url from "url";

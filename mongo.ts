@@ -2,7 +2,7 @@
 console.log("Startup mongo.js");
 import http = require("http");
 import url = require("url");
-//import mongodb = require("mongodb");
+import mongodb = require("mongodb");
 import fs = require("fs");
 //import * as http from "http";
 //import * as url from "url";
