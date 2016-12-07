@@ -12,7 +12,7 @@ import fs = require("fs");
 console.log(process.argv[2]);
 //require("./" + process.argv[2]);
 console.log(fs.existsSync("mongo.js"));
-/*
+
 var databaseURL: string = "mongodb://localhost:27017/test";
 if (process.env.NODE_ENV == "production")
     databaseURL = "mongodb://EIA2Test:EIA2Test1!@ds119368.mlab.com:19368/eia2test";
@@ -50,5 +50,5 @@ function onDone(_e: mongodb.MongoError): void {
 function onCreateCollection(_e: mongodb.MongoError, _collection: mongodb.Collection): void {
     console.log(_e, _collection);
 }
-*/
+
 //db.students.insert([{'name': 'Max', 'job':'Dog'}])
