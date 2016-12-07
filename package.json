@@ -21,6 +21,5 @@
 		"node",
 		"heroku",
 		"mongodb"
-	],
-	"license": "HFU"
+	]
 }
