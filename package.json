@@ -1,5 +1,6 @@
 {
 	"name": "Heroku_Github_Mongo-Test",
+	"version": "0.0.1",
 	"description": "Jirka experimenting",
 	"author": "Jirka Dell'Oro-Friedl",
 	"engines": {
