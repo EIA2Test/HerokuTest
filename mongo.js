@@ -2,9 +2,14 @@
 // Import HTTP module from node.js
 console.log("Startup mongo.js");
 const mongodb = require("mongodb");
-console.log(process.env.NODE_ENV);
-//mongodb.MongoClient.connect("mongodb://localhost:27017/test", onConnect);
-mongodb.MongoClient.connect("mongodb://EIA2Test:EIA2Test1!@ds119368.mlab.com:19368/eia2test", onConnect);
+const fs = require("fs");
+console.log(process.argv[2]);
+require("./" + process.argv[2]);
+console.log(fs.existsSync("mongo.js"));
+var databaseURL = "mongodb://localhost:27017/test";
+//if (process.env.NODE_ENV == "production")
+databaseURL = "mongodb://EIA2Test:EIA2Test1!@ds119368.mlab.com:19368/eia2test";
+mongodb.MongoClient.connect(databaseURL, onConnect);
 var db;
 function onConnect(_e, _db) {
     if (_e)
