@@ -15,16 +15,22 @@ server.listen(port, onListening);
 
 // Handles request and send response
 function handleRequest(request: http.ServerRequest, response: http.ServerResponse): void {
+    console.log("Incoming call");
     console.log("METHOD: " + request.method);
-    if (request.method == "OPTIONS") {
+
+    if (request.method === "OPTIONS") {
         console.log("PREFLIGHT");
-        response.writeHead(200, { "Access-Control-Request-Method": "*" });
+        response.writeHead(200, {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type, Authorization, Content-Length, X-Requested-With"
+        });
         response.end();
         return;
     }
 
     response.writeHead(200, {
-        "content-type": "text/html"
+        "Access-Control-Allow-Origin": "*", "content-type": "text/html"
     });
     response.write("Heroku/Github/Mongo-Test<br>");
     response.write("appearantly needs procfile, though package.json may be omitted when required packages are installed<br>");
