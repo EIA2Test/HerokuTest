@@ -13,8 +13,14 @@ var server = http.createServer(handleRequest);
 server.listen(port, onListening);
 // Handles request and send response
 function handleRequest(request, response) {
+    // headers
     response.setHeader("content-type", "text/html");
     response.setHeader("Access-Control-Allow-Origin", "*");
+    //response.setHeader("Access-Control-Request-Method", "*");
+    //response.setHeader("Access-Control-Allow-Methods", "OPTIONS, GET");
+    //response.setHeader("Access-Control-Allow-Headers", "*");
+    response.writeHead(200);
+    //content
     response.write("Heroku/Github/Mongo-Test<br>");
     response.write("appearantly needs procfile, though package.json may be omitted when required packages are installed<br>");
     response.write("created this text on new branch TestBranch<br>");
