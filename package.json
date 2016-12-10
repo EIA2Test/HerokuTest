@@ -6,9 +6,9 @@
 	"engines": {
 		"node": "5.8.0"
 	},
-	"main": "mongo.js",
+	"main": "test.js",
 	"scripts": {
-		"start": "node mongo.js"
+		"start": "node test.js"
 	},
 	"dependencies": {
 		"mongodb": "2.2.12"
