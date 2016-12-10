@@ -16,7 +16,7 @@ server.listen(port, onListening);
 // Handles request and send response
 function handleRequest(request: http.ServerRequest, response: http.ServerResponse): void {
     response.setHeader("content-type", "text/html");
-    // response.setHeader("Access-Control-Allow-Origin", "*");
+    response.setHeader("Access-Control-Allow-Origin", "*");
     response.write("Heroku/Github/Mongo-Test<br>");
     response.write("appearantly needs procfile, though package.json may be omitted when required packages are installed<br>");
     response.write("created this text on new branch TestBranch<br>");
