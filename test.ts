@@ -15,7 +15,7 @@ server.listen(port, onListening);
 
 // Handles request and send response
 function handleRequest(request: http.ServerRequest, response: http.ServerResponse): void {
-    console.log("SOMETHING'S COMING");
+    console.log("METHOD: " + request.method);
     if (request.method == "OPTIONS") {
         console.log("PREFLIGHT");
         response.writeHead(200, { "Access-Control-Request-Method": "*" });

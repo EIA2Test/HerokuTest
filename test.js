@@ -13,7 +13,7 @@ var server = http.createServer(handleRequest);
 server.listen(port, onListening);
 // Handles request and send response
 function handleRequest(request, response) {
-    console.log("SOMETHING'S COMING");
+    console.log("METHOD: " + request.method);
     if (request.method == "OPTIONS") {
         console.log("PREFLIGHT");
         response.writeHead(200, { "Access-Control-Request-Method": "*" });
