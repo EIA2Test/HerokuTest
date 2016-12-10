@@ -15,16 +15,18 @@ server.listen(port, onListening);
 function handleRequest(request, response) {
     console.log("Incoming call");
     console.log("METHOD: " + request.method);
-    if (request.method === "OPTIONS") {
-        console.log("PREFLIGHT");
-        response.writeHead(200, {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization, Content-Length, X-Requested-With"
-        });
-        response.end();
-        return;
-    }
+    /*
+        if (request.method === "OPTIONS") {
+            console.log("PREFLIGHT");
+            response.writeHead(200, {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type, Authorization, Content-Length, X-Requested-With"
+            });
+            response.end();
+            return;
+        }
+    */
     response.writeHead(200, {
         "Access-Control-Allow-Origin": "*", "content-type": "text/html"
     });

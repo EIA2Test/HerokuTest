@@ -17,7 +17,7 @@ server.listen(port, onListening);
 function handleRequest(request: http.ServerRequest, response: http.ServerResponse): void {
     console.log("Incoming call");
     console.log("METHOD: " + request.method);
-
+/*
     if (request.method === "OPTIONS") {
         console.log("PREFLIGHT");
         response.writeHead(200, {
@@ -28,7 +28,7 @@ function handleRequest(request: http.ServerRequest, response: http.ServerRespons
         response.end();
         return;
     }
-
+*/
     response.writeHead(200, {
         "Access-Control-Allow-Origin": "*", "content-type": "text/html"
     });
