@@ -26,8 +26,8 @@ function handleRequest(request, response) {
     // extract query-parameters
     var query = url.parse(request.url, true).query;
     console.log(query);
-    for (var key in query)
-        response.write(key + ": " + query[key] + "<br>");
+    //    for (var key in query)
+    //        response.write(key + ": " + query[key] + "<br>");
     response.end();
 }
 function onListening() {

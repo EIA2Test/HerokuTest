@@ -28,8 +28,8 @@ function handleRequest(request: http.ServerRequest, response: http.ServerRespons
     // extract query-parameters
     var query: url.Url = url.parse(request.url, true).query;
     console.log(query);
-    for (var key in query)
-        response.write(key + ": " + query[key] + "<br>");
+//    for (var key in query)
+//        response.write(key + ": " + query[key] + "<br>");
     response.end();
 }
 
