@@ -22,7 +22,7 @@ function onConnect(_e, _db) {
         db = _db;
         //console.log("Connected to: ", _db);
         var collection = _db.collection("students");
-        //collection.insertOne({ "name": "Amélie", "job": "Tochter" }, onDone);
+        collection.insertOne({ "name": "Amélie", "job": "Tochter" }, onDone);
         //console.log("Collection: ", collection);
         collection.find({ "name": "Amélie" }).toArray(onFound);
     }

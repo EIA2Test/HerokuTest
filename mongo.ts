@@ -27,7 +27,7 @@ function onConnect(_e: mongodb.MongoError, _db: mongodb.Db): void {
         db = _db;
         //console.log("Connected to: ", _db);
         var collection: mongodb.Collection = _db.collection("students");
-        //collection.insertOne({ "name": "Amélie", "job": "Tochter" }, onDone);
+        collection.insertOne({ "name": "Amélie", "job": "Tochter" }, onDone);
         //console.log("Collection: ", collection);
         collection.find({ "name": "Amélie" }).toArray(onFound);
     }

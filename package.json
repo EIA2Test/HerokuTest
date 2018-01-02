@@ -4,7 +4,7 @@
 	"description": "Jirka experimenting",
 	"author": "Jirka Dell'Oro-Friedl",
 	"engines": {
-		"node": "5.8.0"
+		"node": "6.11.1"
 	},
 	"main": "mongo.js",
 	"scripts": {
