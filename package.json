@@ -8,7 +8,7 @@
 	},
 	"main": "mongo.js",
 	"scripts": {
-		"start": "node mongo.js"
+		"start": "node mongo.js param1 param2"
 	},
 	"dependencies": {
 		"mongodb": "2.2.12"
