@@ -12,7 +12,7 @@ console.log(process.argv[2]);
 console.log(fs.existsSync("mongo.js"));
 var databaseURL = "mongodb://localhost:27017/test";
 if (process.env.NODE_ENV == "production")
-    databaseURL = "mongodb://EIA2Test:EIA2Test1!@ds119368.mlab.com:19368/eia2test";
+    databaseURL = "mongodb://EIA2Test:EIA2Test1!@ds119368.mlab.com:19368/eia2test2";
 mongodb.MongoClient.connect(databaseURL, onConnect);
 var db;
 function onConnect(_e, _db) {
