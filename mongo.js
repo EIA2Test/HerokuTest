@@ -30,6 +30,7 @@ function onConnect(_e, _db) {
 function onFound(_e, _doc) {
     console.log("Found: ", _doc);
     onDone(_e);
+    process.exit();
 }
 function onDone(_e) {
     console.log("Done! Error: ", _e);

@@ -8,7 +8,7 @@ import fs = require("fs");
 //import * as url from "url";
 //import * as mongodb from "mongodb";
 //import * as fs from "fs";
- 
+
 console.log(process.argv[2]);
 //require("./" + process.argv[2]);
 console.log(fs.existsSync("mongo.js"));
@@ -37,6 +37,7 @@ function onConnect(_e: mongodb.MongoError, _db: mongodb.Db): void {
 function onFound(_e: mongodb.MongoError, _doc: Object[]): void {
     console.log("Found: ", _doc);
     onDone(_e);
+    process.exit();
 }
 
 function onDone(_e: mongodb.MongoError): void {
