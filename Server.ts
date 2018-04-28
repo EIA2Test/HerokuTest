@@ -1,6 +1,6 @@
 import * as Http from "http";
 console.log("Server starting");
-
+ 
 let port: number = process.env.PORT;
 if (port == undefined)
     port = 8100;
